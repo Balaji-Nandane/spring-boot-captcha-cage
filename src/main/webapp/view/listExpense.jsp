@@ -17,16 +17,17 @@
 					<div class="panel-heading">
 						<strong><span class="glyphicon glyphicon-list List"></span> Expense List</strong>
 					</div>
-					<input type="button"  align ="right" value="Cancel" onclick="${path}/addExpense"/>
+					<a href ="${path}/"> Home</a>
 
 					<div class="panel-body">
 						<div class="form-group">
 							<table class="table table-striped table-hover">
 	  							<thead>
 									<tr>
-										<th>Name</th>
-										<th>Date Of Birth</th>
-										<th>Salary</th>
+										<th>Item</th>
+										<th>Price</th>
+									     <th>Date</th>
+
 									</tr>
 								</thead>
 								<tbody>
@@ -36,6 +37,7 @@
 												<tr>
 													<td>${expense.item}</td>
 													<td>${expense.amount}</td>
+													<td>${expense.expense_date}</td
 												</tr>
 											</c:forEach>
 										</c:when>

@@ -29,7 +29,7 @@ public class EmployeeController {
 		}
 		model.addAttribute("message", message);
 		model.addAttribute("employee", employeeObject);
-		return "add";
+		return "addEmp";
 	}
 	
 	@PostMapping("/saveEmp")

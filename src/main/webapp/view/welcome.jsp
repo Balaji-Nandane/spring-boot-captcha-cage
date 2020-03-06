@@ -9,7 +9,7 @@
     <title>Create an account</title>
     <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body align ="center">
   <div class="container">
     <c:if test="${pageContext.request.userPrincipal.name != null}">
         <form id="logoutForm" method="POST" action="${contextPath}/logout">
@@ -19,6 +19,12 @@
         <h2>Welcome ${pageContext.request.userPrincipal.name} | <a onclick="document.forms['logoutForm'].submit()">Logout</a></h2>
     </c:if>
   </div>
+  <div class="panel-heading">
+  						<strong><a href ="${path}/addExpense">Add Expense</a></strong>
+  					</div>
+  					<div class="panel-heading">
+                    						<strong> <a href ="${path}/listExpense">Display Expenses </a></strong>
+                    					</div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="${contextPath}/resources/js/bootstrap.min.js"></script>
 </body>

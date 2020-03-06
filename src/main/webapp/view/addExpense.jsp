@@ -14,37 +14,47 @@
 	<link rel="stylesheet" href="${path}/webjars/font-awesome/4.7.0/css/font-awesome.min.css">   </head>
 
    <body>
-      <form:form  method="POST" action="${path}/saveExpense" modelAttribute="expense">
-      <div class="form-group">
-      								<div class="col-md-12">
-      									<div class="input-group input-group-md">
-      										<span class="input-group-addon">
-      											<span class="glyphicon glyphicon-user"></span>
-      										</span>
-         <form:input class="form-control" path="item" placeholder="item" required="true"/>
-         <br>
-               <div class="form-group">
-               								<div class="col-md-12">
-               									<div class="input-group input-group-md">
-               										<span class="input-group-addon">
-               											<span class="glyphicon glyphicon-user"></span>
-               										</span>
-         <form:input  class="form-control"  path="amount" placeholder="amount" required="true"/>
-         </div>
+   <br><br>
+      <form:form  method="POST" action="${path}/saveExpense" modelAttribute="expense" align ="center">
+
+
+         <div class="form-group">
+         								<div class="col-md-12">
+         									<div class="input-group input-group-md">
+         										<span class="input-group-addon">
+         											<span class="glyphicon glyphicon-user"></span>
+         										</span>
+         										<form:input class="form-control" path="item" placeholder="item" required="true"/>
+         									</div>
+         								</div>
+         							</div>
+         							<div class="form-group">
+                                             								<div class="col-md-12">
+                                             									<div class="input-group input-group-md">
+                                             										<span class="input-group-addon">
+                                             											<span class="glyphicon glyphicon-user"></span>
+                                             										</span>
+                                             										<form:input class="form-control" path="amount" placeholder="amount" required="true"/>
+                                             									</div>
+                                             								</div>
+                                             							</div>
+         <div class="form-group">
+         								<div class="col-md-12">
+         									<div class="input-group input-group-md">
+         										<span class="input-group-addon">
+         											<span class="glyphicon glyphicon-calendar"></span>
+         										</span>
+         										<form:input type="date" class="form-control"  path="expense_date" required="true"/>
+         									</div>
          								</div>
          							</div>
 
 
-         									<div class="form-group">
-                                            								<div class="col-md-12" align="right">
-                                            									<a href="${path}/listExpense" class="btn btn-primary btn-xs">
-                                            										<span class="glyphicon glyphicon-list List"></span> Employee List
-                                            									</a>
-                                            									<button type="submit" class="btn btn-success btn-xs">
-                                            										<span class="glyphicon glyphicon-floppy-disk"></span> Save
-                                            									</button>
-                                            								</div>
-                                            							</div>
+            <br> <a href="${path}/listExpense" class="btn btn-primary btn-xs">
+                        <span class="glyphicon glyphicon-list List"></span> Show Expenses </a>
+             <button type="submit" class="btn btn-success btn-xs">
+            <span class="glyphicon glyphicon-floppy-disk"></span> Save
+             </button>
       </form:form>
    </body>
 

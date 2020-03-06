@@ -12,13 +12,24 @@ public class Expense {
     private Long id;
     private String item;
     private float amount;
+    private String expense_date;
+
 
     public Expense() {
     }
 
-    public Expense(String item, float amount) {
+    public Expense(String item, float amount,String expense_date) {
         this.item = item;
         this.amount = amount;
+        this.expense_date=expense_date;
+    }
+
+    public String getExpense_date() {
+        return expense_date;
+    }
+
+    public void setExpense_date(String expense_date) {
+        this.expense_date = expense_date;
     }
 
     public Long getId() {
